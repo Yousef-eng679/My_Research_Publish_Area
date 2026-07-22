@@ -54,42 +54,6 @@ All content publishing, editing, and media management is performed **100% visual
 
 ---
 
-## 💻 Developer Installation & Setup
-
-> **Note:** The setup instructions below are strictly for developers configuring the local server or deploying to production hosting.
-
-### 1. Clone & Install
-```bash
-git clone https://github.com/volib635-bot/My_Research_Publish_Area.git
-cd My_Research_Publish_Area
-npm install
-```
-
-### 2. Environment Setup
-Create a `.env.local` file in the root directory:
-```env
-# Neon Postgres Connection URL
-DATABASE_URL=postgresql://neondb_owner:...@ep-bold-sea-...neon.tech/neondb?sslmode=require
-
-# Authentication JWT Secret
-JWT_SECRET=your_super_secret_jwt_key_32_chars_long
-
-# Admin Credentials
-ADMIN_USERNAME=admin
-ADMIN_PASSWORD=your_strong_password
-
-# Public Site URL
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
-
-### 3. Database Migration & Development Server
-```bash
-npx drizzle-kit push
-npm run dev
-```
-
----
-
 ## 📂 Repository Structure
 
 ```
