@@ -31,7 +31,7 @@ export async function GET() {
     rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
       <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
         <channel>
-          <title>Antigravity Library Blog</title>
+          <title>Yousef's Library Blog</title>
           <link>${baseUrl}/blog</link>
           <description>Chronological thoughts, engineering notes, and reviews</description>
           <atom:link href="${baseUrl}/blog/rss.xml" rel="self" type="application/rss+xml" />
@@ -46,7 +46,7 @@ export async function GET() {
     rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
       <rss version="2.0">
         <channel>
-          <title>Antigravity Library Blog</title>
+          <title>Yousef's Library Blog</title>
           <link>${baseUrl}/blog</link>
           <description>An error occurred building the feed.</description>
         </channel>

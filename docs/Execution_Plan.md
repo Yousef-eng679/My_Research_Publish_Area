@@ -1,9 +1,5 @@
-# Antigravity Execution Plan
-## Personal Publishing Platform — Step-by-Step Agent Prompts
-
-
-
-Recommended Antigravity setting for this build: **Agent-assisted mode**, Terminal Policy = Auto. Switch to Review-driven mode only if you want to approve every file write during Phase 0.
+# Execution Plan: Yousef's Digital Research Archive
+## Personal Publishing Platform — Step-by-Step System Build Guide
 
 ---
 

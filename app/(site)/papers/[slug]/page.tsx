@@ -70,7 +70,7 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
   const citationText =
     paper.citeAs ||
-    `${formattedAuthors} (${year}). ${paper.title}. Antigravity Library.`;
+    `${formattedAuthors} (${year}). ${paper.title}. Yousef's Library.`;
 
   // ScholarlyArticle JSON-LD structured data
   const jsonLd = {
