@@ -10,11 +10,11 @@ A modern, high-performance, open-access digital publishing platform built for ho
 
 ---
 
-## 🖥️ Visual Content Management (Admin Dashboard)
+##  Visual Content Management (Admin Dashboard)
 
 All content publishing, editing, and media management is performed **100% visually through the Admin Dashboard GUI** — zero coding or command-line commands required!
 
-### 👑 Author Dashboard Capabilities (`/admin`)
+###  Author Dashboard Capabilities (`/admin`)
 - **Visual Drag & Drop Uploads:** Upload PDF documents (`.pdf`), cover images (`.png`, `.jpg`, `.webp`), and Markdown files (`.md`) side-by-side using dedicated upload cards.
 - **Academic Paper Publisher:** Write research abstracts, attach full PDF documents, auto-generate BibTeX citations, and insert inline reference tooltips.
 - **Serialized Book & Chapter Studio:** Organize books into multi-chapter volumes or publish single-volume full PDF books with responsive embedded document viewers.
@@ -22,7 +22,7 @@ All content publishing, editing, and media management is performed **100% visual
 
 ---
 
-## 🌟 Key Platform Features
+##  Key Platform Features
 
 ### 📄 Academic Research Publications
 - **Embedded Document Viewer:** Responsive, full-screen PDF viewer embedded directly inside paper detail pages.
@@ -42,7 +42,7 @@ All content publishing, editing, and media management is performed **100% visual
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+##  Tech Stack & Architecture
 
 - **Framework:** Next.js 16 (App Router, Server Actions, Turbopack)
 - **Language:** TypeScript
