@@ -1,7 +1,7 @@
 # Antigravity Execution Plan
 ## Personal Publishing Platform — Step-by-Step Agent Prompts
 
-**How to use this document:** Each numbered item below is a single, self-contained prompt to paste into Antigravity as a new agent task. Run them **in order** — don't start Phase N+1 until Phase N's verification step passes. Use **Plan mode** for anything marked 🧠 (complex/architectural) and **Fast mode** for anything marked ⚡ (small, mechanical). After each task, check the agent's Artifacts (plan, screenshots, terminal output) before approving — don't just trust a "done" message.
+
 
 Recommended Antigravity setting for this build: **Agent-assisted mode**, Terminal Policy = Auto. Switch to Review-driven mode only if you want to approve every file write during Phase 0.
 
@@ -9,7 +9,7 @@ Recommended Antigravity setting for this build: **Agent-assisted mode**, Termina
 
 ## PHASE 0 — Scaffold
 
-### 0.1 🧠 Project setup
+### 0.1  Project setup
 ```
 Create a new Next.js 14+ project using the App Router and TypeScript.
 Set up Tailwind CSS. Set up an MDX content pipeline using Contentlayer
@@ -38,7 +38,7 @@ styled placeholder page.
 ```
 **Verify:** Dev server runs, placeholder page is styled, one dummy MDX file parses without error.
 
-### 0.2 ⚡ Base layout & typography system
+### 0.2  Base layout & typography system
 ```
 Build the base site layout: a persistent header with nav links (Blog,
 Papers, Books, Topics, Search) and a footer. Implement a typography
@@ -53,7 +53,7 @@ and typography render correctly on both desktop and mobile widths
 ```
 **Verify:** Screenshots at both widths look intentional, not default-Tailwind.
 
-### 0.3 ⚡ Deploy pipeline
+### 0.3  Deploy pipeline
 ```
 Set up deployment to Vercel for this project. Confirm the site builds
 and deploys successfully, and give me the live URL. If Vercel CLI/auth
@@ -67,7 +67,7 @@ run manually.
 
 ## PHASE 1 — Blog (simplest content type first)
 
-### 1.1 🧠 Blog data schema + list page
+### 1.1  Blog data schema + list page
 ```
 Define the MDX frontmatter schema for blog posts:
 slug, title, summary, topics (array), status (draft|published),
@@ -88,7 +88,7 @@ Take screenshots of both the list page and a single post page.
 ```
 **Verify:** List page shows both posts correctly sorted; individual post renders with correct typography; draft posts (if you add one) do NOT appear on the list.
 
-### 1.2 ⚡ Topic tagging + topic index
+### 1.2  Topic tagging + topic index
 ```
 Build /app/(site)/topics/page.tsx: lists all unique topics found across
 content in /content/, with a count of how many items use each topic.
@@ -107,7 +107,7 @@ posts from the previous step.
 
 ## PHASE 2 — Papers
 
-### 2.1 🧠 Paper schema + index page
+### 2.1  Paper schema + index page
 ```
 Define the MDX frontmatter schema for papers, extending the shared
 content schema: abstract, authors (array, default to a single configurable
@@ -124,7 +124,7 @@ in the next step.
 ```
 **Verify:** Paper index page shows the dummy paper correctly formatted, denser than blog list.
 
-### 2.2 🧠 Paper page with TOC, citations, cite-as block
+### 2.2  Paper page with TOC, citations, cite-as block
 ```
 Build /app/(site)/papers/[slug]/page.tsx with:
 1. Abstract displayed prominently at the top
@@ -146,7 +146,7 @@ showing the TOC, abstract, and cite-as block all visible.
 
 ## PHASE 3 — Books
 
-### 3.1 🧠 Book + chapter schema, shelf page
+### 3.1  Book + chapter schema, shelf page
 ```
 Define schemas for books and chapters:
 Book: slug, title, description, cover_image, topics, status
@@ -161,7 +161,7 @@ test serialized-publishing behavior in the next step.
 ```
 **Verify:** Cover-grid renders and is visually distinct from the blog/paper list layouts.
 
-### 3.2 🧠 Book landing + chapter reader
+### 3.2  Book landing + chapter reader
 ```
 Build /app/(site)/books/[slug]/page.tsx: shows cover, description, and
 the full chapter list. Published chapters are clickable; draft chapters
@@ -187,7 +187,7 @@ from nav — actually blocked, return 404 or redirect).
 
 ## PHASE 4 — Cross-cutting features
 
-### 4.1 ⚡ Search
+### 4.1  Search
 ```
 Integrate Pagefind (static search, no backend) into this project.
 Index all published content across blog, papers, and books at build time.
@@ -199,7 +199,7 @@ the dummy paper — confirm both show up with correct type labels.
 ```
 **Verify:** Search returns results across all 3 content types, correctly labeled.
 
-### 4.2 ⚡ RSS feed + sitemap + SEO metadata
+### 4.2  RSS feed + sitemap + SEO metadata
 ```
 Generate an RSS feed at /blog/rss.xml for blog posts.
 Generate sitemap.xml covering all published content across all 3 types.
@@ -218,7 +218,7 @@ page's rendered <head> to confirm meta tags are present.
 
 ## PHASE 5 — Polish
 
-### 5.1 ⚡ Dark mode
+### 5.1  Dark mode
 ```
 Add a dark mode toggle to the header, using Tailwind's dark mode class
 strategy. Ensure the reading typography (especially the serif body font)
@@ -229,7 +229,7 @@ light and dark mode.
 ```
 **Verify:** Dark mode screenshots look intentional, not just inverted; toggle persists on reload.
 
-### 5.2 ⚡ Related content linking
+### 5.2  Related content linking
 ```
 Add an optional `related_content` field to the blog post schema
 (array of slugs, can point to papers or books). On the blog post page,
@@ -238,7 +238,7 @@ Wire the dummy blog post to link to the dummy paper as a test.
 ```
 **Verify:** Related content section appears and links work when the field is populated, and is hidden entirely when it's empty.
 
-### 5.3 ⚡ EPUB export for books
+### 5.3  EPUB export for books
 ```
 Add EPUB generation for books — either at build time (generate a static
 .epub per book from its published chapters) or via an on-demand API
