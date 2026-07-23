@@ -63,9 +63,13 @@ All content publishing, editing, and media management is performed **100% visual
 │   ├── api/             # Protected API endpoints (Auth, Uploads, Search, EPUB, RSS)
 │   └── uploads/         # Dynamic runtime binary file server route
 ├── components/          # Reusable UI components (Header, Footer, Document Viewers, Cards)
+├── docs/                # Project documentation (Architecture, Security, Challenges & PRDs)
+│   ├── ARCHITECTURE.md
+│   ├── CHALLENGES.md
+│   ├── PRD.md
+│   └── UI_UX_guideline.md
 ├── lib/                 # Core utilities (Markdown compiler, Rate Limiter, Security, Uploads)
-├── public/uploads/      # Persistent local upload directories
-└── CHALLENGES.md        # Engineering catalog of edge cases & technical solutions
+└── public/uploads/      # Persistent local upload directories
 ```
 
 ---
