@@ -29,7 +29,9 @@ export const metadata: Metadata = {
   },
   description: "Personal research archive of Yousef — AI & Software Engineering Research.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
+    shortcut: "/favicon.png",
+    apple: "/icon.png",
   },
 };
 
