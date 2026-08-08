@@ -44,10 +44,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border-muted bg-bg-base/80 backdrop-blur-md transition-all duration-300">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo / Home link */}
-        <Link href="/" className="group flex items-center space-x-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-green-accent bg-green-dark/30 text-green-accent shadow-[0_0_10px_rgba(16,185,129,0.3)] transition-transform duration-300 group-hover:scale-105">
-            <span className="font-mono text-sm font-bold">Y</span>
-          </div>
+        <Link href="/" className="group flex items-center space-x-2.5">
+          <img
+            src="/icon.png"
+            alt="yousef.dev logo"
+            className="h-8 w-8 rounded-lg object-cover border border-green-accent/50 shadow-[0_0_10px_rgba(16,185,129,0.3)] transition-transform duration-300 group-hover:scale-105"
+          />
           <span className="font-sans text-lg font-bold tracking-tight text-text-primary transition-all duration-300 group-hover:text-glow-accent group-hover:text-green-accent">
             Yousef's <span className="text-xs font-normal text-text-secondary">Library</span>
           </span>
